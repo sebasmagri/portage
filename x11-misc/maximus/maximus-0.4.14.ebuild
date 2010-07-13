@@ -8,11 +8,11 @@ inherit gnome2
 
 DESCRIPTION="A desktop daemon for automatically maximise and un-decorate windows"
 HOMEPAGE="https://launchpad.net/maximus"
-SRC_URI="http://launchpad.net/${PN}/trunk/1.2.0beta/+download/${P}.tar.gz"
+SRC_URI="http://launchpad.net/${PN}/0.4/ubuntu-9.10/+download/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="x11-libs/gtk+:2
