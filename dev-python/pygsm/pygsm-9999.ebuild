@@ -11,15 +11,16 @@ PYTHON_MODNAME="pygsm"
 inherit distutils git
 
 DESCRIPTION="Python interface to GSM modems"
-HOMEPAGE="http://github.com/adammck/pygsm"
-EGIT_REPO_URI="http://github.com/adammck/${PN}.git"
+HOMEPAGE="http://github.com/rapidsms/${PN}"
+EGIT_REPO_URI="http://github.com/rapidsms/${PN}.git"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~x86"
 IUSE=""
 
-DEPEND=""
-RDEPEND="${DEPEND} dev-python/pyserial"
+DEPEND="dev-python/pytz"
+RDEPEND="${DEPEND}
+	dev-python/pyserial"
 
 RESTRICT_PYTHON_ABIS="3.*"
