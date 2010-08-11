@@ -1,0 +1,3 @@
+# Sebastián Ramírez Magrí <sebasmagri@gmail.com> (aug 11, 2010)
+# Masking gbrainy live
+=games-puzzle/gbrainy-9999
