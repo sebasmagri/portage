@@ -6,21 +6,22 @@ EAPI="1"
 
 DESCRIPTION="A lightweight music manager"
 HOMEPAGE="https://sites.google.com/site/consonancemanager/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+SRC_URI="http://sites.google.com/site/${PN}manager/releases-1/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="modplug"
+IUSE=""
 
 DEPEND="dev-libs/dbus-glib
 	dev-db/sqlite:3
+	media-libs/libcddb
 	media-libs/flac
 	media-libs/libao
 	media-libs/libmad
 	media-libs/libsndfile
 	media-libs/libvorbis
-	modplug? ( media-libs/libmodplug )
+	media-libs/libmodplug
 	media-libs/taglib
 	x11-libs/gtk+:2
 	x11-libs/libnotify"
