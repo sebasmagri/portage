@@ -20,6 +20,7 @@ KEYWORDS="~x86"
 IUSE=""
 
 DEPEND=""
-RDEPEND="${DEPEND} dev-python/pyserial"
+RDEPEND="${DEPEND}
+	dev-python/pyserial"
 
 RESTRICT_PYTHON_ABIS="3.*"
