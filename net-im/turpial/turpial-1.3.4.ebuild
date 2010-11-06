@@ -10,12 +10,9 @@ PYTHON_MODNAME="turpial"
 
 inherit distutils
 
-MY_PV="${PV:0:5}-b2"
-MY_P="${PN}-${MY_PV}"
-
 DESCRIPTION="Lightweigth and featurefull microblogging client"
 HOMEPAGE="http://turpial.org.ve/"
-SRC_URI="http://forja.softwarelibre.gob.ve/frs/download.php/198/${MY_P}.tar.gz"
+SRC_URI="http://turpial.googlecode.com/files/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -32,7 +29,5 @@ RDEPEND="${DEPEND}
 	dev-python/pygtk
 	dev-python/pywebkitgtk
 	dev-python/simplejson"
-
-S=${WORKDIR}/${MY_P}
 
 RESTRICT_PYTHON_ABIS="3.*"
