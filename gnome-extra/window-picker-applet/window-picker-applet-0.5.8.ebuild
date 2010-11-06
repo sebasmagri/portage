@@ -2,6 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+EAPI=2
+
 inherit gnome2
 
 DESCRIPTION="A gnome-panel applet that displays open windows as icons on the
