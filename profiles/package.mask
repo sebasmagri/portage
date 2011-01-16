@@ -6,3 +6,7 @@
 # Masking turpial live git ebuild
 =net-im/turpial-9999
 
+# Sebastián Ramírez Magrí <sebasmagri@gmail.com> (aug 15, 2010)
+# Mask live ebuilds for fillmore and lombard
+=media-video/lombard-9999
+=media-sound/fillmore-9999
