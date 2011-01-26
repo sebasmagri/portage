@@ -8,9 +8,9 @@ PYTHON_DEPEND="2::2.6"
 
 PYTHON_MODNAME="turpial"
 
-inherit distutils versionator
+inherit distutils
 
-MY_P="${PN}-$(get_version_component_range 1-3)-b1"
+MY_P="${P/_beta1/-b1}"
 
 S="${WORKDIR}/${MY_P}"
 
