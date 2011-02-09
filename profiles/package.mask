@@ -4,7 +4,7 @@
 
 # Sebastián Ramírez Magrí <sebasmagri@gmail.com> (aug 15, 2010)
 # Masking turpial live git ebuild
-=net-im/turpial-9999
+=net-misc/turpial-9999
 
 # Sebastián Ramírez Magrí <sebasmagri@gmail.com> (aug 15, 2010)
 # Mask live ebuilds for fillmore and lombard
