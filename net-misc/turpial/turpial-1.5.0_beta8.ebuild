@@ -10,7 +10,7 @@ PYTHON_MODNAME="turpial"
 
 inherit distutils
 
-MY_P="${P/_beta4/-b4}"
+MY_P="${P/_beta/-b}"
 
 S="${WORKDIR}/${MY_P}"
 
@@ -20,7 +20,7 @@ SRC_URI="http://turpial.org.ve/files/sources/development/${MY_P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~x86"
+KEYWORDS="~x86 ~amd64"
 IUSE=""
 
 DEPEND="dev-python/Babel
@@ -29,9 +29,8 @@ DEPEND="dev-python/Babel
 RDEPEND="${DEPEND}
 	dev-python/gtkspell-python
 	dev-python/notify-python
-	dev-python/pygame
 	dev-python/pygtk
-	dev-python/pywebkitgtk
-	dev-python/simplejson"
+	dev-python/simplejson
+	media-libs/gst-plugins-base"
 
 RESTRICT_PYTHON_ABIS="3.*"
