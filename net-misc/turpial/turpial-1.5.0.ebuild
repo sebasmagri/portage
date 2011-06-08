@@ -4,9 +4,7 @@
 
 EAPI=3
 
-PYTHON_DEPEND="2::2.6"
-
-PYTHON_MODNAME="turpial"
+PYTHON_DEPEND="2:2.6:2.7"
 
 SUPPORT_PYTHON_ABIS="1"
 
@@ -21,8 +19,8 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
 
-DEPEND="dev-python/Babel
-	dev-python/setuptools"
+DEPEND=">=dev-python/Babel-0.9.5
+	>=dev-python/setuptools-0.6.14"
 
 RDEPEND="${DEPEND}
 	dev-python/gtkspell-python
@@ -31,4 +29,4 @@ RDEPEND="${DEPEND}
 	dev-python/simplejson
 	media-libs/gst-plugins-base"
 
-RESTRICT_PYTHON_ABIS="2.[45] 3.*"
+RESTRICT_PYTHON_ABIS="3.*"
