@@ -26,7 +26,6 @@ RDEPEND="${DEPEND}
 	dev-python/gtkspell-python
 	dev-python/notify-python
 	dev-python/pygtk
-	dev-python/simplejson
 	media-libs/gst-plugins-base"
 
 RESTRICT_PYTHON_ABIS="3.*"
