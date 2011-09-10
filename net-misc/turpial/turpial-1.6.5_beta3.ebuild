@@ -10,9 +10,13 @@ SUPPORT_PYTHON_ABIS="1"
 
 inherit distutils
 
+MY_P="${P/_beta/-b}"
+
+S="${WORKDIR}/${MY_P}"
+
 DESCRIPTION="Lightweigth and featurefull microblogging client"
 HOMEPAGE="http://turpial.org.ve/"
-SRC_URI="http://turpial.org.ve/files/sources/stable/${P}.tar.gz"
+SRC_URI="http://turpial.org.ve/files/sources/development/${MY_P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -26,6 +30,7 @@ RDEPEND="${DEPEND}
 	dev-python/gtkspell-python
 	dev-python/notify-python
 	dev-python/pygtk
+        dev-python/pywebkitgtk
 	media-libs/gst-plugins-base"
 
 RESTRICT_PYTHON_ABIS="2.5 3.*"
