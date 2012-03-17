@@ -1,31 +1,27 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI="2"
 
-inherit qt4
-
-MY_P="GR-lida-${PV}"
+inherit qt4-r2
 
 DESCRIPTION="Frontend for scummvm and dosbox"
-HOMEPAGE="http://www.laisladelabandoware.es"
-SRC_URI="http://dl.sharesource.org/grlida/${MY_P}.tar.bz2"
+HOMEPAGE="http://www.gr-lida.org"
+SRC_URI="https://github.com/Monthy/${PN}/tarball/v${PV} -> ${PN}-${PV}.tgz"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="dosbox scummvm"
 
-DEPEND="x11-libs/qt-core
-	x11-libs/qt-gui
-	x11-libs/qt-sql[sqlite]
-	x11-libs/qt-phonon
+DEPEND="x11-libs/qt-gui:4
+	x11-libs/qt-sql:4[sqlite]
 	dosbox? ( games-emulation/dosbox )
 	scummvm? ( games-engines/scummvm )"
 RDEPEND="${DEPEND}"
 
-S=${WORKDIR}/${MY_P}
+S="${WORKDIR}/Monthy-${PN}-d686834"
 
 src_configure(){
 	eqmake4 "${PN}".pro
