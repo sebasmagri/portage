@@ -33,7 +33,7 @@ RDEPEND=">=dev-libs/glib-2.18:2
 	libnotify? ( >=x11-libs/libnotify-0.3.2 )
 "
 DEPEND="${RDEPEND}
-	>=dev-util/pkgconfig-0.7
+	virtual/pkgconfig
 	>=app-text/gnome-doc-utils-0.3.2
 	nls? ( sys-devel/gettext )"
 
