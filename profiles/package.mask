@@ -1,12 +1,7 @@
-# Sebastián Ramírez Magrí <sebasmagri@gmail.com> (aug 11, 2010)
-# Masking gbrainy live
-=games-puzzle/gbrainy-9999
-
 # Sebastián Ramírez Magrí <sebasmagri@gmail.com> (aug 15, 2010)
 # Masking turpial live git ebuild
 =net-misc/turpial-9999
 
-# Sebastián Ramírez Magrí <sebasmagri@gmail.com> (aug 15, 2010)
-# Mask live ebuilds for fillmore and lombard
-=media-video/lombard-9999
-=media-sound/fillmore-9999
+# Sebastián Ramírez Magrí <sebasmagri@gmail.com> (apr 10, 2014)
+# Masking libturpial live git ebuild
+=net-libs/libturpial-9999
