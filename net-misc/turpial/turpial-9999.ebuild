@@ -16,15 +16,12 @@ EGIT_BRANCH="development"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="gtk qt4"
+IUSE="qt4"
 
-DEPEND=">=dev-python/Babel-0.9.5
-	>=dev-python/setuptools-0.6.14"
+DEPEND=">=dev-python/Babel-1.3
+	>=dev-python/setuptools-0.8-r1"
 
-RDEPEND="dev-python/gtkspell-python
-	dev-python/notify-python
-	dev-python/pywebkitgtk
-	media-libs/gst-plugins-base
+RDEPEND=">=dev-python/notify-python-0.1.1-r3
+	>=media-libs/gst-plugins-base-1.2.3
 	>=net-libs/libturpial-1.7.0
-	gtk? ( dev-python/pygtk )
-	qt4? ( dev-python/PyQt4 )"
+	qt4? ( >=dev-python/PyQt4-4.10.2 )"
